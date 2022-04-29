@@ -67,8 +67,8 @@ html {
 }
 
 *,
- ::after,
- ::before {
+::after,
+::before {
   box-sizing: inherit;
 }
 
@@ -85,19 +85,19 @@ html {
 
 @media screen and (max-width:1650px) {
   html {
-    font-size: 8px!important
+    font-size: 8px !important
   }
 }
 
 @media screen and (max-width:1000px) {
   html {
-    font-size: 9px!important
+    font-size: 9px !important
   }
 }
 
 @media screen and (max-width:600px) {
   html {
-    font-size: 8px!important
+    font-size: 8px !important
   }
 }
 
@@ -121,11 +121,11 @@ html::after,
 .pos.header-photo::after,
 .header-inner::after,
 .sec-grp::after,
-.group-c::after,
+.group::after,
 .content-group::after,
 .period::after,
 .sides::after,
-.list-item-group-inner::after,
+.list-item-group::after,
 .deco .header::after,
 .score-holder::after,
 .pos::after,
@@ -133,7 +133,6 @@ html::after,
 .header-title::after,
 .contact-group::after,
 .location::after,
-.list-item-group::after,
 .period::after,
 .content-inner::after,
 .list-header::after,
@@ -204,34 +203,31 @@ a {
   background-color: transparent
 }
 
-#main.mainDocument .mainPage {
+#main.mainDocument .document {
   position: relative;
   margin: 0 auto;
   transform: scale(0.8) translateY(-10%);
 }
 
-.mainPage {
-  position: relative
-}
-
-.mainPage .contact-group {
+.document .contact-group {
   cursor: pointer
 }
 
-.mainPage .contact-group a,
-.mainPage .contact-group div {
+.document .contact-group a,
+.document .contact-group div {
   cursor: pointer
 }
 
 .textx,
 .textx-el {
   cursor: text;
-  -webkit-user-select: text!important;
-  user-select: text!important
+  -webkit-user-select: text !important;
+  user-select: text !important
 }
+
 #main .textx,
 #main .textx-el {
-  outline: 0!important
+  outline: 0 !important
 }
 
 .header-photo .header-holder {
@@ -313,28 +309,27 @@ a {
 }
 
 .deco .textx-el a {
-  text-decoration: underline!important
+  text-decoration: underline !important
 }
 
 .textx-el a {
-  margin-top: 0!important;
-  margin-left: 0!important;
-  margin-right: 0!important;
-  margin-bottom: 0!important;
-  padding-top: 0!important;
-  padding-left: 0!important;
-  padding-right: 0!important;
-  padding-bottom: 0!important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
   display: initial
 }
 
 .textx-inline-block {
-  display: inline-block!important
+  display: inline-block !important
 }
 
 .deco .after-fix,
 .deco .period,
-.deco .pos.header-photo,
 .deco .header-inner {
   height: auto;
   position: relative
@@ -354,24 +349,24 @@ div {
 
 .deco-doc-bottom,
 .deco-doc-top {
-  position: absolute!important;
+  position: absolute !important;
   width: 100%;
-  background-size: cover!important
+  background-size: cover !important
 }
 
 .deco-doc-top {
   background-image: url('../assets/images/back.svg');
   filter: brightness(0.15);
-  top: 0!important;
-  background-position: left top!important;
+  top: 0 !important;
+  background-position: left top !important;
   height: 100%;
 }
 
 .deco-doc-bottom {
   background-image: url('../assets/images/back-down.svg');
   filter: brightness(0.90);
-  bottom: 0!important;
-  background-position: left bottom!important;
+  bottom: 0 !important;
+  background-position: left bottom !important;
   height: 50%;
 }
 
@@ -393,13 +388,13 @@ div {
 .deco .textx,
 .deco .textx-contact,
 .deco .textx-el {
-  max-width: 100%!important;
+  max-width: 100% !important;
   margin: 0;
   padding: 0;
-  -webkit-margin-before: 0!important;
-  -webkit-margin-after: 0!important;
-  -webkit-margin-start: 0!important;
-  -webkit-margin-end: 0!important;
+  -webkit-margin-before: 0 !important;
+  -webkit-margin-after: 0 !important;
+  -webkit-margin-start: 0 !important;
+  -webkit-margin-end: 0 !important;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -434,18 +429,18 @@ div {
 body,
 html {
   text-rendering: optimizeLegibility;
-  font-weight: 400!important
+  font-weight: 400 !important
 }
 
 #main .top-main .pos {
-  margin-bottom: 0!important
+  margin-bottom: 0 !important
 }
 
 #main .left .pos:last-of-type,
-#main .left .pos:not(.right-sec-filled) .group-c:last-of-type .content-group:last-of-type,
+#main .left .pos:not(.right-sec-filled) .group.content-group:last-of-type,
 #main .right .pos:last-of-type,
-#main .right .pos:not(.right-sec-filled) .group-c:last-of-type .content-group:last-of-type {
-  margin-bottom: 0!important
+#main .right .pos:not(.right-sec-filled) .group.content-group:last-of-type {
+  margin-bottom: 0 !important
 }
 
 .textx-contact {
@@ -456,15 +451,15 @@ html {
 }
 
 .name-period .textx-el-period {
-  text-decoration: none!important;
+  text-decoration: none !important;
   display: inline-block;
-  white-space: nowrap!important
+  white-space: nowrap !important
 }
 
 .sec-grp,
 .content-group,
-.group-c,
-.list-item-group-inner,
+.group,
+.list-item-group,
 .score,
 .pos,
 .name-summary,
@@ -474,14 +469,13 @@ html {
 
 .sec-grp,
 .content-group,
-.group-c,
-.list-item-group-inner,
+.group,
+.list-item-group,
 .deco .pos,
 .deco .name-summary,
 .deco .header-title,
 .deco .header,
-.contact-group,
-.list-item-group {
+.contact-group {
   max-width: 100%;
   width: 100%;
   position: relative;
@@ -490,8 +484,8 @@ html {
 
 .sec-grp,
 .content-group,
-.group-c,
-.list-item-group-inner,
+.group,
+.list-item-group,
 .score,
 .score-inner,
 .pos,
@@ -499,7 +493,6 @@ html {
 .header-title,
 .contact-group,
 .contact-group:before,
-.list-item-group,
 .header {
   -webkit-box-sizing: border-box;
   box-sizing: border-box
@@ -569,7 +562,7 @@ html {
 }
 
 .content-group .list:last-of-type {
-  margin-bottom: 0!important
+  margin-bottom: 0 !important
 }
 
 .content-group .list .list-header {
@@ -609,9 +602,9 @@ html {
   text-align: right
 }
 
-.deco .section-edu .list-item-group-inner {
+.deco .section-edu .list-item-group {
   width: 50%;
-  float: left!important
+  float: left !important
 }
 
 .pos.right-sec-filled.widget-box .list-header {
@@ -638,35 +631,30 @@ body {
 
 body,
 html {
-  line-height: 1!important
+  line-height: 1 !important
 }
 
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   position: relative;
-  overflow-x: hidden!important
+  overflow-x: hidden !important
 }
 
 
 
 
-#main .mainPage,
-#main .mainPage .deco {
+#main .document,
+#main .deco {
   max-width: 1184px
 }
 
-#main .mainPage,
-#main .mainPage .deco {
+#main .document,
+#main .deco {
   min-height: 1706px
 }
 
-/* #main .mainPage .deco .deco-doc-bottom,
-#main .mainPage .deco .deco-doc-top {
-  height: 842px!important;
-} */
-
-.mainPage .deco .sides {
+.deco .sides {
   height: auto;
   position: relative;
 }
@@ -680,6 +668,7 @@ html {
   overflow: hidden;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
 }
+
 .deco-resume .contact.full-width,
 .deco-resume .top-main .header {
   padding-left: 50px;
@@ -701,7 +690,7 @@ html {
   padding-left: 36px
 }
 
-.deco-resume .section-edu .list-item-group-inner:nth-of-type(2n+1) {
+.deco-resume .section-edu .list-item-group:nth-of-type(2n+1) {
   padding-right: 18px
 }
 
@@ -731,20 +720,20 @@ html {
   padding-bottom: 4px
 }
 
-.pos:not(.right-sec-filled) .group-c:last-of-type .content-group {
-  padding-bottom: 0!important;
-  margin-bottom: 0!important
+.pos:not(.right-sec-filled) .group.content-group:last-of-type {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important
 }
 
-.mainPage .deco .left .pos .sec-grp .group-c:last-of-type .content-group,
-.mainPage .deco .right .pos .sec-grp .group-c:last-of-type .content-group {
-  padding-bottom: 0!important;
-  margin-bottom: 0!important
+.deco .left .pos .sec-grp .group.content-group:last-of-type,
+.deco .right .pos .sec-grp .group.content-group:last-of-type {
+  padding-bottom: 0 !important;
+  /* margin-bottom: 0 !important */
 }
 
-.pos:last-of-type .group-c:last-of-type .content-group {
-  padding-bottom: 0!important;
-  margin-bottom: 0!important
+.pos:last-of-type .group.content-group:last-of-type {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important
 }
 
 .pos.right-sec .content-group {
@@ -753,10 +742,6 @@ html {
 
 .pos.right-sec-filled .content-group .list-header {
   border-width: 2px
-}
-
-.pos.right-sec.widget-box .group-c .content-group {
-  margin-bottom: 14px!important
 }
 
 .deco .content-group .list {
@@ -772,14 +757,14 @@ html {
 }
 
 .deco .shift-right.location {
-  width: 250px!important
+  width: 250px !important
 }
 
 .score-holder {
   position: relative
 }
 
-.section-lang.pos.right-sec .group-c:not(:last-of-type) .content-group {
+.section-lang.pos.right-sec .group.content-group:not(:last-of-type) {
   min-height: 36px
 }
 
@@ -801,8 +786,8 @@ html {
   margin-right: 10px
 }
 
-.pos.widget.widget-box .content-group .content-inner {
-  margin-bottom: 8px!important
+.pos.widget.widget-box .content-group.content-inner {
+  margin-bottom: 8px !important
 }
 
 .pos.widget.widget-box .content-group .list-header {
@@ -811,7 +796,7 @@ html {
 }
 
 .pos.right-sec .score:last-child {
-  margin-right: 0!important
+  margin-right: 0 !important
 }
 
 .pos.right-sec .score {
@@ -843,7 +828,7 @@ html {
 }
 
 .deco .right .section-lang.pos.right-sec .score-holder {
-  width: 172px!important
+  width: 172px !important
 }
 
 .section-lang.pos .score-holder {
@@ -864,7 +849,7 @@ html {
   margin-top: 2px
 }
 
-.header-title .section-title {
+.header-title.section-title {
   padding-top: 6px
 }
 
@@ -884,15 +869,11 @@ html {
   margin-bottom: 4px
 }
 
-.deco .section-big .content-group .list-box {
-  margin-top: 2px
-}
-
-.deco .section-semi .list-item-group-inner {
+.deco .section-semi .list-item-group {
   margin-bottom: 6px
 }
 
-.deco .section-edu .list-item-group-inner {
+.deco .section-edu .list-item-group {
   margin-bottom: 4px
 }
 
@@ -906,16 +887,16 @@ html {
 }
 
 .section-contact .texty-size-e {
-  font-size: 16px!important;
-  line-height: 20px!important
+  font-size: 16px !important;
+  line-height: 20px !important
 }
 
 .name-size {
   position: relative;
   left: -2px;
-  font-size: 46px!important;
+  font-size: 46px !important;
   min-height: 46px;
-  line-height: 48px!important
+  line-height: 48px !important
 }
 
 #main .name-size {
@@ -923,39 +904,39 @@ html {
 }
 
 .texty-size-b {
-  font-size: 28px!important;
+  font-size: 28px !important;
   min-height: 28px;
-  line-height: 30px!important
+  line-height: 30px !important
 }
 
 .deco .texty-size-c {
-  font-size: 24px!important;
+  font-size: 24px !important;
   min-height: 24px;
-  line-height: 26px!important
+  line-height: 26px !important
 }
 
 .deco .texty-size-d {
-  font-size: 20px!important;
+  font-size: 20px !important;
   min-height: 20px;
-  line-height: 22px!important
+  line-height: 22px !important
 }
 
 .deco .texty-size-e {
-  font-size: 18px!important;
+  font-size: 18px !important;
   min-height: 18px;
-  line-height: 22px!important
+  line-height: 22px !important
 }
 
 .deco .texty-size-f {
-  font-size: 16px!important;
+  font-size: 16px !important;
   min-height: 16px;
-  line-height: 18px!important
+  line-height: 18px !important
 }
 
 .deco .texty-size-f a {
-  font-size: 16px!important;
+  font-size: 16px !important;
   min-height: 16px;
-  line-height: 18px!important
+  line-height: 18px !important
 }
 
 .deco-resume .top-main .header,
@@ -1008,68 +989,63 @@ html {
   background-image: url('../assets/images/github.svg');
 }
 
-.deco .contact.full-width .section-contact {
+.deco .contact.full-width.section-contact {
   display: table;
   width: 100%;
   padding-bottom: 16px
 }
 
-.deco .contact.full-width .section-contact .contact-group {
+.deco .contact.full-width.section-contact .contact-group {
   float: left;
   width: initial;
   vertical-align: top;
   display: table-cell
 }
 
-.deco .contact.full-width .section-contact .contact-group {
+.deco .contact.full-width.section-contact .contact-group {
   margin-top: 20px;
-  padding-right: 34px!important
+  padding-right: 34px !important
 }
 
-.deco .contact.full-width .section-contact .contact-group a {
-  padding-left: 34px!important
+.deco .contact.full-width.section-contact .contact-group a {
+  padding-left: 34px !important
 }
 
-.deco .contact.full-width .section-contact .contact-group:last-child {
+.deco .contact.full-width.section-contact .contact-group:last-child {
   padding-right: 0
 }
 
-.deco .contact.full-width .section-contact {
-  padding-left: 0!important;
-  padding-right: 0!important
+.deco .contact .section-contact .group {
+  padding-left: 0 !important;
+  padding-right: 0 !important
 }
 
-.deco .contact .section-contact .group-c {
-  padding-left: 0!important;
-  padding-right: 0!important
+.deco .contact.full-width.section-contact .contact-group {
+  float: left !important;
+  display: block !important;
+  width: 50% !important;
+  position: relative !important
 }
 
-.deco .contact.full-width .section-contact .contact-group {
-  float: left!important;
-  display: block!important;
-  width: 50%!important;
-  position: relative!important
+.deco .contact.full-width.section-contact .contact-group:nth-of-type(1) {
+  padding-right: 70px !important
 }
 
-.deco .contact.full-width .section-contact .contact-group:nth-of-type(1) {
-  padding-right: 70px!important
+.deco .contact.full-width.section-contact .contact-group:nth-of-type(2) {
+  padding-right: 0 !important
 }
 
-.deco .contact.full-width .section-contact .contact-group:nth-of-type(2) {
-  padding-right: 0!important
+.deco .contact.full-width.section-contact .contact-group:nth-of-type(2) a {
+  padding-left: 70px !important
 }
 
-.deco .contact.full-width .section-contact .contact-group:nth-of-type(2) a {
-  padding-left: 70px!important
-}
-
-.deco .contact.full-width .section-contact .contact-group:nth-of-type(2) .contact-group-icon {
+.deco .contact.full-width.section-contact .contact-group:nth-of-type(2) .contact-group-icon {
   margin-left: 32px
 }
 
 .pos.header-photo {
-  height: 100%!important;
-  position: relative;
+  height: 100% !important;
+  /* position: relative; */
   width: auto
 }
 
@@ -1099,10 +1075,10 @@ html {
   border-radius: 50%
 }
 
-.list-item-group-inner .list-item-bullet {
+.list-item-group .list-item-bullet {
   background-image: url('../assets/images/bullet.svg');
-  display: block!important;
-  float: left!important;
+  display: block !important;
+  float: left !important;
   position: absolute
 }
 
@@ -1115,19 +1091,19 @@ html {
 }
 
 .deco .pos.section-big .list-item-content,
-.deco .pos.section-semi .list-box .list-item-content {
+.deco .pos.section-semi .list-item-content {
   padding-left: 18px
 }
 
 .list-item-bullet,
-.list-item-group-inner .list-item-bullet {
+.list-item-group .list-item-bullet {
   width: 8px;
   height: 8px
 }
 
 .deco .left,
 .deco .right {
-  width: 50%!important
+  width: 50% !important
 }
 
 .document .top-main {
@@ -1140,19 +1116,19 @@ html {
 }
 
 .document .top-main .section-contact .textx-contact {
-  color: #fff!important
+  color: #fff !important
 }
 
-.document .top-main .contact.full-width .section-contact {
+.document .top-main .contact.full-width.section-contact {
   color: #fff
 }
 
 .document.deco-resume .section-summary {
-  margin-top: 18px!important
+  margin-top: 18px !important
 }
 
 .document.deco-resume .top-main .header .header-sub {
-  width: 77%!important
+  width: 77% !important
 }
 
 .document.deco-resume .top-main .pos.header-photo {
@@ -1165,19 +1141,21 @@ html {
 }
 
 .document.deco-resume .pos.header-photo {
+  padding-left: inherit;
+  padding-right: inherit;
   position: absolute;
   right: 0;
   top: 0
 }
 
 .document.deco-resume .section-header .border-x {
-  padding-bottom: 4px!important;
+  padding-bottom: 4px !important;
   margin-bottom: 14px;
   border-bottom-width: 4px;
   border-left-width: 0;
   border-top-width: 0;
   border-right-width: 0;
-  border-bottom-style: solid!important;
+  border-bottom-style: solid !important;
   float: left;
   width: auto
 }
@@ -1185,7 +1163,7 @@ html {
 .document.deco-resume .right-sec-filled.widget-box .section-header,
 .document.deco-resume .right-sec.widget-box .section-header,
 .document.deco-resume .section-lang.pos.right-sec .section-header {
-  margin-bottom: 6px!important
+  margin-bottom: 6px !important
 }
 
 
@@ -1203,6 +1181,7 @@ html {
   overflow: hidden;
   transition: all 0.2s ease;
 }
+
 .btn-circle-download:after {
   content: "";
   position: relative;
@@ -1212,12 +1191,14 @@ html {
   background-image: linear-gradient(100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
   transform: translateX(-100%);
 }
+
 .btn-circle-download svg {
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
 }
+
 .btn-circle-download svg#border {
   position: absolute;
   top: 0;
@@ -1227,6 +1208,7 @@ html {
   stroke-dashoffset: 144;
   transition: all 0.9s linear;
 }
+
 .btn-circle-download svg#arrow {
   position: absolute;
   top: 14px;
@@ -1234,6 +1216,7 @@ html {
   stroke: #9098A9;
   transition: all 0.2s ease;
 }
+
 .btn-circle-download svg#check {
   position: absolute;
   top: 17px;
@@ -1241,38 +1224,47 @@ html {
   stroke: white;
   transform: scale(0);
 }
+
 .btn-circle-download:hover {
   background: rgba(0, 119, 255, 0.2);
 }
+
 .btn-circle-download:hover #arrow path,
 .btn-circle-download:hover #arrow polyline {
   stroke: #4f90cd;
 }
+
 .btn-circle-download.load {
   background: rgba(0, 119, 255, 0.2);
 }
+
 .btn-circle-download.load #arrow path,
 .btn-circle-download.load #arrow polyline {
   stroke: #4f90cd;
 }
+
 .btn-circle-download.load #border {
   stroke: #4f90cd;
   stroke-dasharray: 144;
   stroke-dashoffset: 0;
 }
+
 .btn-circle-download.done {
   background: #4f90cd;
   animation: rubberBand 0.8s;
 }
+
 .btn-circle-download.done:after {
   transform: translateX(50%);
   transition: transform 0.4s ease;
   transition-delay: 0.7s;
 }
+
 .btn-circle-download.done #border,
 .btn-circle-download.done #arrow {
   display: none;
 }
+
 .btn-circle-download.done #check {
   transform: scale(1);
   transition: all 0.2s ease;
@@ -1283,25 +1275,32 @@ html {
   from {
     transform: scale(1, 1, 1);
   }
+
   30% {
     transform: scale3d(1.15, 0.75, 1);
   }
+
   40% {
     transform: scale3d(0.75, 1.15, 1);
   }
+
   50% {
     transform: scale3d(1.1, 0.85, 1);
   }
+
   65% {
     transform: scale3d(0.95, 1.05, 1);
   }
+
   75% {
     transform: scale3d(1.05, 0.95, 1);
   }
+
   to {
     transform: scale3d(1, 1, 1);
   }
 }
+
 .credit {
   position: fixed;
   right: 20px;
@@ -1311,9 +1310,11 @@ html {
   user-select: none;
   opacity: 0.6;
 }
+
 .credit img {
   width: 72px;
 }
+
 .credit:hover {
   transform: scale(0.95);
 }
@@ -1322,25 +1323,31 @@ html {
   #resume-btn {
     display: none;
   }
+
   #main {
     background-color: transparent;
   }
-  .mainPage {
+
+  .document {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     margin: 0 !important;
     transform: none !important;
   }
-  #main .mainPage, #main .mainPage .deco {
+
+  #main .document,
+  #main .deco {
     width: 100% !important;
     min-width: 100% !important;
     max-width: 100% !important;
   }
+
   .deco-resume {
     border-radius: 0 !important;
     box-shadow: none !important;
   }
+
   /* @page {
     size: A4 !important;
     margin: 0 !important;
