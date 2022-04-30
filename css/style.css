@@ -64,6 +64,8 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-weight: 400 !important
 }
 
 *,
@@ -227,7 +229,8 @@ a {
 
 #main .textx,
 #main .textx-el {
-  outline: 0 !important
+  outline: 0;
+  display: inline;
 }
 
 .header-photo .header-holder {
@@ -309,7 +312,7 @@ a {
 }
 
 .deco .textx-el a {
-  text-decoration: underline !important
+  text-decoration: underline
 }
 
 .textx-el a {
@@ -424,12 +427,6 @@ div {
 .deco .text-c,
 .deco .text-c.textx-el {
   font-style: italic
-}
-
-body,
-html {
-  text-rendering: optimizeLegibility;
-  font-weight: 400 !important
 }
 
 #main .top-main .pos {
@@ -603,6 +600,10 @@ html {
 }
 
 .deco .section-edu .list-item-group {
+  float: left !important
+}
+
+.deco .section-edu .list-item-content {
   width: 50%;
   float: left !important
 }
@@ -676,6 +677,7 @@ html {
 }
 
 .deco-resume .left .section-big .content-inner,
+.deco-resume .left .section-small .content-inner,
 .deco-resume .left .section-semi .content-inner,
 .deco-resume .left .section-header {
   padding-left: 50px;
@@ -684,6 +686,7 @@ html {
 
 .deco-resume .right .right-sec-filled .sec-grp,
 .deco-resume .right .right-sec .sec-grp,
+.deco-resume .right .section-big .content-inner,
 .deco-resume .right .section-small .content-inner,
 .deco-resume .right .section-header {
   padding-right: 50px;
@@ -718,6 +721,10 @@ html {
 .section-semi .content-group,
 .section-small .content-group {
   padding-bottom: 4px
+}
+
+.section-cert .textx-el a {
+  font-size: inherit;
 }
 
 .pos:not(.right-sec-filled) .group.content-group:last-of-type {
@@ -984,6 +991,10 @@ html {
   background-image: url('../assets/images/github.svg');
 }
 
+.website-icon {
+  background-image: url('../assets/images/website.svg');
+}
+
 .deco .contact.full-width.section-contact .group {
   display: flex;
   flex-flow: row wrap;
@@ -1049,11 +1060,11 @@ html {
 }
 
 .deco .pos.section-big .list-item-bullet {
-  top: 6px
+  top: 8px
 }
 
 .deco .pos.section-semi .list-item-bullet {
-  top: 4px
+  top: 7px
 }
 
 .deco .pos.section-big .list-item-content,
@@ -1296,16 +1307,12 @@ html {
     background-color: transparent;
   }
 
-  .document {
+  #main .document {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     margin: 0 !important;
     transform: none !important;
-  }
-
-  #main .document,
-  #main .deco {
     width: 100% !important;
     min-width: 100% !important;
     max-width: 100% !important;
