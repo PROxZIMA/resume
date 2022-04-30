@@ -151,7 +151,7 @@ html::after,
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: " ";
+  /* content: " "; */
   clear: both;
   height: 0
 }
@@ -660,7 +660,7 @@ html {
 }
 
 .deco .top-main {
-  padding-top: 44px
+  padding-top: 34px
 }
 
 .deco-resume {
@@ -728,7 +728,6 @@ html {
 .deco .left .pos .sec-grp .group.content-group:last-of-type,
 .deco .right .pos .sec-grp .group.content-group:last-of-type {
   padding-bottom: 0 !important;
-  /* margin-bottom: 0 !important */
 }
 
 .pos:last-of-type .group.content-group:last-of-type {
@@ -952,10 +951,6 @@ html {
   text-decoration: none
 }
 
-.deco .contact-group {
-  position: relative
-}
-
 .deco .contact-group .contact-group-icon {
   position: absolute;
   left: 0;
@@ -989,26 +984,21 @@ html {
   background-image: url('../assets/images/github.svg');
 }
 
-.deco .contact.full-width.section-contact {
-  display: table;
+.deco .contact.full-width.section-contact .group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   width: 100%;
   padding-bottom: 16px
 }
 
 .deco .contact.full-width.section-contact .contact-group {
-  float: left;
-  width: initial;
-  vertical-align: top;
-  display: table-cell
-}
-
-.deco .contact.full-width.section-contact .contact-group {
+  width: auto;
   margin-top: 20px;
-  padding-right: 34px !important
 }
 
 .deco .contact.full-width.section-contact .contact-group a {
-  padding-left: 34px !important
+  padding-left: 30px !important
 }
 
 .deco .contact.full-width.section-contact .contact-group:last-child {
@@ -1020,32 +1010,8 @@ html {
   padding-right: 0 !important
 }
 
-.deco .contact.full-width.section-contact .contact-group {
-  float: left !important;
-  display: block !important;
-  width: 50% !important;
-  position: relative !important
-}
-
-.deco .contact.full-width.section-contact .contact-group:nth-of-type(1) {
-  padding-right: 70px !important
-}
-
-.deco .contact.full-width.section-contact .contact-group:nth-of-type(2) {
-  padding-right: 0 !important
-}
-
-.deco .contact.full-width.section-contact .contact-group:nth-of-type(2) a {
-  padding-left: 70px !important
-}
-
-.deco .contact.full-width.section-contact .contact-group:nth-of-type(2) .contact-group-icon {
-  margin-left: 32px
-}
-
 .pos.header-photo {
   height: 100% !important;
-  /* position: relative; */
   width: auto
 }
 
@@ -1112,6 +1078,8 @@ html {
 }
 
 .document .top-main .header {
+  display: flex;
+  align-items: center;
   margin-bottom: 34px
 }
 
@@ -1133,7 +1101,7 @@ html {
 
 .document.deco-resume .top-main .pos.header-photo {
   right: 0;
-  top: -4px
+  top: 0;
 }
 
 .document.deco-resume .top-main .header-holder-img {
