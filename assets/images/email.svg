@@ -1,1 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve"><g><style type="text/css">.contact-icon{fill:#FFFFFF;}</style><path class="contact-icon" d="M16,20.57143l-3.95886-3.46514L0.72229,26.80914c0.41143,0.38171,0.96686,0.61943,1.57943,0.61943h27.39657c0.61029,0,1.16343-0.23771,1.57257-0.61943l-11.312-9.70286L16,20.57143z"/><path class="contact-icon" d="M31.27771,5.19086c-0.41143-0.384-0.96457-0.61943-1.57943-0.61943H2.30171c-0.61029,0-1.16343,0.23771-1.57486,0.624L16,18.28572L31.27771,5.19086z"/><polygon class="contact-icon" points="0,6.57829 0,25.568 11.04686,16.18057 "/><polygon class="contact-icon" points="20.95314,16.18057 32,25.568 32,6.57143 "/></g></svg>
+<?xml version="1.0" encoding="utf-8"?><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32"
+  style="enable-background:new 0 0 32 32;" xml:space="preserve">
+  <g>
+    <style type="text/css">
+      .contact-icon {
+        fill: #4f90cd;
+      }
+    </style>
+    <path class="contact-icon"
+      d="M16,20.57143l-3.95886-3.46514L0.72229,26.80914c0.41143,0.38171,0.96686,0.61943,1.57943,0.61943h27.39657c0.61029,0,1.16343-0.23771,1.57257-0.61943l-11.312-9.70286L16,20.57143z" />
+    <path class="contact-icon"
+      d="M31.27771,5.19086c-0.41143-0.384-0.96457-0.61943-1.57943-0.61943H2.30171c-0.61029,0-1.16343,0.23771-1.57486,0.624L16,18.28572L31.27771,5.19086z" />
+    <polygon class="contact-icon" points="0,6.57829 0,25.568 11.04686,16.18057 " />
+    <polygon class="contact-icon" points="20.95314,16.18057 32,25.568 32,6.57143 " />
+  </g>
+</svg>
