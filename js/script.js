@@ -12,6 +12,7 @@ resumeBtn.addEventListener("click", async () => {
   if (LOCAL_DOMAINS.includes(location.hostname)) {
     document.title = "Pratik Pingale's Resume";
     window.print();
+    document.title = "Resume - Pratik Pingale";
   } else {
     window.location.assign("./extras/Pratik Pingale's Resume.pdf");
   }
