@@ -770,9 +770,9 @@ html {
   position: relative
 }
 
-.section-lang.pos.right-sec .group.content-group:not(:last-of-type) {
+/* .section-lang.pos.right-sec .group.content-group:not(:last-of-type) {
   min-height: 36px
-}
+} */
 
 .score {
   cursor: pointer
@@ -814,7 +814,7 @@ html {
   background-color: #fff
 }
 
-.deco .right .section-lang.pos.right-sec .list-header {
+/* .deco .right .section-lang.pos.right-sec .list-header {
   width: 160px;
   margin-right: 26px
 }
@@ -839,7 +839,7 @@ html {
 
 .section-lang.pos .score-holder {
   float: left
-}
+} */
 
 .pos.right-sec .score.score-neg {
   border-width: 2px;
@@ -879,9 +879,9 @@ html {
   margin-bottom: 6px
 }
 
-.deco .section-edu .list-item-group {
+/* .deco .section-edu .list-item-group {
   margin-bottom: 4px
-}
+} */
 
 .deco .pos.section-semi .list-header,
 .deco .pos.section-small .list-header {
@@ -1139,11 +1139,11 @@ html {
   width: auto
 }
 
-.document.deco-resume .right-sec-filled.widget-box .section-header,
+/* .document.deco-resume .right-sec-filled.widget-box .section-header,
 .document.deco-resume .right-sec.widget-box .section-header,
 .document.deco-resume .section-lang.pos.right-sec .section-header {
   margin-bottom: 6px !important
-}
+} */
 
 
 .btn-circle-download {
