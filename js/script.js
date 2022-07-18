@@ -1,4 +1,4 @@
-const LOCAL_DOMAINS = ["127.0.0.1", ""];
+const LOCAL_DOMAINS = ["127.0.0.1", "0.0.0.0", "localhost"];
 const resumeBtn = document.getElementById('resume-btn');
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
