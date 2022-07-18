@@ -1,1 +1,1 @@
-# [https://proxzima.ml/resume](https://proxzima.ml/resume)
+# [https://proxzima.dev/resume](https://proxzima.dev/resume)
