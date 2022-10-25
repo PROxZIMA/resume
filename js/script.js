@@ -1,13 +1,9 @@
-const LOCAL_DOMAINS = ["127.0.0.1", "0.0.0.0", "localhost"];
 const resumeBtn = document.getElementById('resume-btn');
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 resumeBtn.addEventListener("click", async (e) => {
-  let isLocalServer = false;
-  if (LOCAL_DOMAINS.includes(location.hostname)) {
-    isLocalServer = true;
-    e.preventDefault();
-  }
+  e.preventDefault();
+  const url = e.currentTarget.href;
 
   resumeBtn.classList.add("load");
 
@@ -15,12 +11,40 @@ resumeBtn.addEventListener("click", async (e) => {
   resumeBtn.classList.add("done");
 
   await sleep(1000);
-  if (isLocalServer) {
-    document.title = "Pratik Pingale's Resume";
-    window.print();
-    document.title = "Resume - Pratik Pingale";
-  }
-
-  await sleep(500);
   resumeBtn.classList.remove("load", "done");
+
+  window.open(url, '_blank');
 });
+
+const DEFAULT_URL = "./extras/Pratik Pingale's Resume.pdf";
+const ENABLE_XFA = true;
+const container = document.getElementById("viewerContainer");
+const eventBus = new pdfjsViewer.EventBus();
+
+const pdfLinkService = new pdfjsViewer.PDFLinkService({
+  eventBus,
+  externalLinkTarget: 2
+});
+
+const pdfViewer = new pdfjsViewer.PDFViewer({
+  container,
+  eventBus,
+  removePageBorders: true,
+  linkService: pdfLinkService,
+});
+
+pdfLinkService.setViewer(pdfViewer);
+
+eventBus.on("pagesinit", function () {
+  pdfViewer.currentScaleValue = "page-width";
+});
+
+const loadingTask = pdfjsLib.getDocument({
+  url: DEFAULT_URL,
+  enableXfa: ENABLE_XFA,
+});
+(async function () {
+  const pdfDocument = await loadingTask.promise;
+  pdfViewer.setDocument(pdfDocument);
+  pdfLinkService.setDocument(pdfDocument, null);
+})();
