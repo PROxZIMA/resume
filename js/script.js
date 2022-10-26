@@ -16,7 +16,7 @@ resumeBtn.addEventListener("click", async (e) => {
   window.open(url, '_blank');
 });
 
-const DEFAULT_URL = "./extras/Pratik Pingale's Resume.pdf";
+const DEFAULT_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Resume.pdf";
 const ENABLE_XFA = true;
 const container = document.getElementById("viewerContainer");
 const eventBus = new pdfjsViewer.EventBus();
