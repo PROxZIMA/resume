@@ -1,0 +1,153 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/PROxZIMA/resume
+%
+% Authors:
+% Pratik Pingale <contact@proxzima.dev>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{moderate-blue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{./src/profile}
+\name{Pratik}{Pingale}
+\position{Web Developer{\enskip\cdotp\enskip}Competitive Programmer}
+\address{A-601 Amrutdhara, Wadmukhwadi, Pune 412105, India}
+
+\mobile{(+91) 9075715518}
+\email{pratikbpingale9075@gmail.com}
+%\dateofbirth{January 1st, 1970}
+\homepage{proxzima.dev}
+\github{PROxZIMA}
+\linkedin{pratik-pingale}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+\quote{"I believe I can and I'm halfway there."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {\uppercase{<Organization>\\<Street name>\\<Area, City Postal code>}}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for <Job role>}
+% How the letter is opened
+\letteropening{Dear <Mr./Ms./Dr. LastName/Hiring Team>,}
+% Signature to be used
+% \lettersignature[noedge,left]{./src/signature}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Pratik Pingale~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+% \lettersection{About Me}
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+I am writing in regard to your job opening of <Target role>. As a candidate with extensive experience in <Job title>, I am highly skilled in <Hard Skills to JD>. My solid background in <People Skills> has allowed me to manage teams with exceptional performance.
+
+The opportunity to join <Organization> greatly interests me because <Reasons>. As a holder of <Degrees, Certs>I can competently execute <JD responsibilities>.
+I am confident that I can make a significant contribution to your organization. I would appreciate the opportunity to discuss my qualifications with you in more detail and I offer my resume for your review.
+
+As per my professional summary, my qualities and experience make me highly suitable for the role of <Target Role>.
+I am highly regarded for <Transferable skills>. I am proficient in <Systems>.
+
+Throughout my career, I have demonstrated the highest levels of service and commitment to the mission of any organization I have worked for. <List 3-4 achievements relevant to the JD>.
+
+Thus, if you are looking for an organized and dedicated <What<Job title> + Who<with a proven track record of success>>, you are welcome to contact me to arrange an interview. I am eager to learn more about how your organization can benefit from my contribution.
+
+I thank you for your time and consideration and I look forward to hearing from you.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+% \begin{tikzpicture}%
+% \node [inner sep=0pt] {\includegraphics[width=4cm]{src/signature}};
+% \end{tikzpicture}
+
+
+
+\end{document}
