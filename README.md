@@ -1,6 +1,4 @@
-## [https://proxzima.dev/resume](https://proxzima.dev/resume)
-
-## Preview
+## [Preview](https://proxzima.dev/resume)
 
 #### Résumé
 
