@@ -664,6 +664,7 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{%
+ \pdfbookmark{#1}{#1}
   \vspace{\acvSectionTopSkip}
   \sectionstyle{#1}
   \phantomsection
