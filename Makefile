@@ -12,7 +12,7 @@ RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
 CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
 COMPANY = $(filter-out $@,$(MAKECMDGOALS))
 
-all: $(foreach x, clsample cv resume, $x.pdf)
+all: clsample cv resume
 
 resume:
 	$(CC) -output-directory=$(SRC_DIR) $(SRC_DIR)/resume.tex $(RESUME_SRCS)
