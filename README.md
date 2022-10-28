@@ -1,4 +1,5 @@
-## [Preview](https://proxzima.dev/resume)
+## [Preview](https://proxzima.dev/resume/)
+[![Github Pages](https://github.com/PROxZIMA/resume/actions/workflows/pages.yml/badge.svg)](https://proxzima.dev/resume/)
 
 #### Résumé
 
