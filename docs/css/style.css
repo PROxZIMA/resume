@@ -162,8 +162,12 @@ html {
   max-width: 950px;
   /* min-width: 700px; */
   /* min-height: 1343px; */
-  aspect-ratio: 0.5/1.414;
+  aspect-ratio: 1/1.414;
   /* min-height: 2686px; */
+}
+
+#main .document.cv {
+  aspect-ratio: 0.5/1.414;
 }
 
 .document {

@@ -21,6 +21,8 @@ let DEFAULT_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extr
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('cv') !== null) {
   DEFAULT_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20CV.pdf";
+  const mainDoc = document.querySelector('#main .document');
+  mainDoc.classList.add('cv');
 }
 resumeBtn.href = DEFAULT_URL;
 
