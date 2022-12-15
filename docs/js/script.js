@@ -16,7 +16,14 @@ resumeBtn.addEventListener("click", async (e) => {
   window.open(url, '_blank');
 });
 
-const DEFAULT_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Resume.pdf";
+let DEFAULT_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Resume.pdf";
+
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('cv') !== null) {
+  DEFAULT_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20CV.pdf";
+}
+resumeBtn.href = DEFAULT_URL;
+
 const ENABLE_XFA = true;
 const container = document.getElementById("viewerContainer");
 const eventBus = new pdfjsViewer.EventBus();
