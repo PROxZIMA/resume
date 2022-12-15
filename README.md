@@ -1,13 +1,21 @@
 ## [Preview](https://proxzima.dev/resume/)
 [![Github Pages](https://github.com/PROxZIMA/resume/actions/workflows/pages.yml/badge.svg)](https://proxzima.dev/resume/)
 
-#### Résumé
+#### [Résumé](https://proxzima.dev/resume/)
 
 You can see [PDF](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Resume.pdf)
 
+| Page 1 |
+|:---:|
+|<a href="https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Resume.pdf"><img style="width:50%" src="https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/resume.png"/></a> |
+
+#### [Curriculum Vitae](https://proxzima.dev/resume/?cv)
+
+You can see [PDF](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20CV.pdf)
+
 | Page 1 | Page 2 |
 |:---:|:---:|
-| [![Résumé](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/resume-0.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Resume.pdf)  | [![Résumé](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/resume-1.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Resume.pdf) |
+| [![Résumé](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/cv-0.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20CV.pdf)  | [![Résumé](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/cv-1.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20CV.pdf) |
 
 #### Cover Letter
 
