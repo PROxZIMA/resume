@@ -180,10 +180,15 @@ html {
 }
 
 #viewerContainer {
-  overflow: auto;
+  overflow: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+#viewer {
+  min-width: max-content;
+  transform-origin: top left;
 }
 
 .pdfViewer.removePageBorders .page {
@@ -194,12 +199,18 @@ html {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
 
-.btn-circle-download {
-  display: block;
+.external {
+  height: max-content;
+  width: 48px;
   position: absolute;
+  z-index: 10;
   top: 3rem;
   right: 3rem;
-  z-index: 1;
+}
+
+.btn-circle-download {
+  display: block;
+  position: relative;
   height: 48px;
   width: 48px;
   margin: auto;
@@ -297,6 +308,20 @@ html {
   transform: scale(1);
   transition: all 0.2s ease;
   transition-delay: 0.2s;
+}
+
+.external.focus .btn-circle-download.alternate,
+.external:hover .btn-circle-download.alternate {
+  margin-block-start: 24px;
+}
+
+.btn-circle-download.alternate {
+  z-index: -1;
+  margin-block-start: -48px;
+  line-height: 48px;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
 }
 
 
