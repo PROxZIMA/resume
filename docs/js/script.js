@@ -3,13 +3,16 @@ const alternateBtn = document.getElementById('alternate-btn');
 const external = document.getElementById('external');
 const viewer = document.getElementById("viewer");
 const container = document.getElementById("viewerContainer");
+const skeleton = document.getElementById("skeleton");
 let totalPages = 0;
 
 
 const updatePDFScale = () => {
   let width = container.clientWidth;
   let scale = width / viewer.firstChild.clientWidth;
+  skeleton.style.display = "none";
   viewer.style.transform = `scale(${scale})`;
+  viewer.style.visibility = "visible";
 };
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
