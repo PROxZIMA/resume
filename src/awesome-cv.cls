@@ -533,117 +533,117 @@
             \ifthenelse{\isundefined{\@mobile}}%
             {}%
             {%
-                \href{tel:\@mobile}{\faMobile*\acvHeaderIconSep\@mobile}%
+                \href{tel:\@mobile}{\raisebox{-0.1em}{\faMobile*}\acvHeaderIconSep\@mobile}%
                 \setbool{isstart}{false}%
             }%
             \ifthenelse{\isundefined{\@email}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{mailto:\@email}{\faAt\acvHeaderIconSep\@email}%
+                \href{mailto:\@email}{\raisebox{-0.1em}{\faAt}\acvHeaderIconSep\@email}%
             }%
             \ifthenelse{\isundefined{\@dateofbirth}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
                 % \mbox prevents wrapping of elements%
-                \mbox{\faBirthdayCake\acvHeaderIconSep\@dateofbirth}%
+                \mbox{\raisebox{-0.1em}{\faBirthdayCake}\acvHeaderIconSep\@dateofbirth}%
             }%
             \ifthenelse{\isundefined{\@homepage}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
+                \href{https://\@homepage}{\raisebox{-0.1em}{\faHome}\acvHeaderIconSep\@homepage}%
             }%
             \ifthenelse{\isundefined{\@github}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://github.com/\@github}{\faGithub\acvHeaderIconSep\@github}%
+                \href{https://github.com/\@github}{\raisebox{-0.1em}{\faGithub}\acvHeaderIconSep\@github}%
             }%
             \ifthenelse{\isundefined{\@gitlab}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://gitlab.com/\@gitlab}{\faGitlab\acvHeaderIconSep\@gitlab}%
+                \href{https://gitlab.com/\@gitlab}{\raisebox{-0.1em}{\faGitlab}\acvHeaderIconSep\@gitlab}%
             }%
             \ifthenelse{\isundefined{\@bitbucket}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://bitbucket.com/\@bitbucket}{\faBitbucket\acvHeaderIconSep\@bitbucket}%
+                \href{https://bitbucket.com/\@bitbucket}{\raisebox{-0.1em}{\faBitbucket}\acvHeaderIconSep\@bitbucket}%
             }%
             \ifthenelse{\isundefined{\@stackoverflowid}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://stackoverflow.com/users/\@stackoverflowid}{\faStackOverflow\acvHeaderIconSep\@stackoverflowname}%
+                \href{https://stackoverflow.com/users/\@stackoverflowid}{\raisebox{-0.1em}{\faStackOverflow}\acvHeaderIconSep\@stackoverflowname}%
             }%
             \ifthenelse{\isundefined{\@linkedin}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedin\acvHeaderIconSep\@linkedin}%
+                \href{https://www.linkedin.com/in/\@linkedin}{\raisebox{-0.1em}{\faLinkedin}\acvHeaderIconSep\@linkedin}%
             }%
             \ifthenelse{\isundefined{\@orcid}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://orcid.org/\@orcid}{\faOrcid\acvHeaderIconSep\@orcid}%
+                \href{https://orcid.org/\@orcid}{\raisebox{-0.1em}{\faOrcid}\acvHeaderIconSep\@orcid}%
             }%
             \ifthenelse{\isundefined{\@twitter}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://twitter.com/\@twitter}{\faTwitter\acvHeaderIconSep\@twitter}%
+                \href{https://twitter.com/\@twitter}{\raisebox{-0.1em}{\faTwitter}\acvHeaderIconSep\@twitter}%
             }%
             \ifthenelse{\isundefined{\@mastodonname}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://\@mastodoninstance/@\@mastodonname}{\faMastodon\acvHeaderIconSep\@mastodonname}%
+                \href{https://\@mastodoninstance/@\@mastodonname}{\raisebox{-0.1em}{\faMastodon}\acvHeaderIconSep\@mastodonname}%
             }%
             \ifthenelse{\isundefined{\@skype}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \faSkype\acvHeaderIconSep\@skype%
+                \raisebox{-0.1em}{\faSkype}\acvHeaderIconSep\@skype%
             }%
             \ifthenelse{\isundefined{\@reddit}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://www.reddit.com/user/\@reddit}{\faReddit\acvHeaderIconSep\@reddit}%
+                \href{https://www.reddit.com/user/\@reddit}{\raisebox{-0.1em}{\faReddit}\acvHeaderIconSep\@reddit}%
             }%
             \ifthenelse{\isundefined{\@researchgate}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://www.researchgate.net/profile/\@researchgate}{\faResearchgate\acvHeaderIconSep\@researchgate}%
+                \href{https://www.researchgate.net/profile/\@researchgate}{\raisebox{-0.1em}{\faResearchgate}\acvHeaderIconSep\@researchgate}%
             }%
             \ifthenelse{\isundefined{\@xing}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://www.xing.com/profile/\@xing}{\faXingSquare\acvHeaderIconSep\@xing}
+                \href{https://www.xing.com/profile/\@xing}{\raisebox{-0.1em}{\faXingSquare}\acvHeaderIconSep\@xing}
             }%
             \ifthenelse{\isundefined{\@medium}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://medium.com/@\@medium}{\faMedium\acvHeaderIconSep\@medium}%
+                \href{https://medium.com/@\@medium}{\raisebox{-0.1em}{\faMedium}\acvHeaderIconSep\@medium}%
             }%
             \ifthenelse{\isundefined{\@kaggle}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://kaggle.com/\@kaggle}{\faKaggle\acvHeaderIconSep\@kaggle}%
+                \href{https://kaggle.com/\@kaggle}{\raisebox{-0.1em}{\faKaggle}\acvHeaderIconSep\@kaggle}%
             }%
             \ifthenelse{\isundefined{\@googlescholarid}}%
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://scholar.google.com/citations?user=\@googlescholarid}{\faGraduationCap\acvHeaderIconSep\@googlescholarname}%
+                \href{https://scholar.google.com/citations?user=\@googlescholarid}{\raisebox{-0.1em}{\faGraduationCap}\acvHeaderIconSep\@googlescholarname}%
             }%
             \ifthenelse{\isundefined{\@extrainfo}}%
             {}%
@@ -756,7 +756,7 @@
     \begin{center}
         \setlength\tabcolsep{0pt}
         \setlength{\extrarowheight}{0pt}
-        \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
+        \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} R{1.5cm} @{\hskip 0.1cm} L{\textwidth - 5.6cm} R{2.5cm}}
             }{%
         \end{tabular*}
     \end{center}
@@ -764,7 +764,7 @@
 % Define a line of cv information(honor, award or something else)
 % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
 \newcommand*{\cvhonor}[4]{%
-    \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+    \honordatestyle{#4} & \honorpositionstyle{#1} & \honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
 
 % Define an environment for cvskill
