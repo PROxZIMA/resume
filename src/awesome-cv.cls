@@ -225,14 +225,14 @@
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text} #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
 
@@ -561,7 +561,7 @@
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://github.com/\@github}{\raisebox{-0.1em}{\faGithub}\acvHeaderIconSep\@github}%
+                \href{https://github.com/\@github}{\raisebox{-0.1em}{\faGithub}\acvHeaderIconSep github/\@github}%
             }%
             \ifthenelse{\isundefined{\@gitlab}}%
             {}%
@@ -585,7 +585,7 @@
             {}%
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-                \href{https://www.linkedin.com/in/\@linkedin}{\raisebox{-0.1em}{\faLinkedin}\acvHeaderIconSep\@linkedin}%
+                \href{https://www.linkedin.com/in/\@linkedin}{\raisebox{-0.1em}{\faLinkedin}\acvHeaderIconSep in/\@linkedin}%
             }%
             \ifthenelse{\isundefined{\@orcid}}%
             {}%
@@ -718,7 +718,7 @@
     \setlength{\LTpost}{0pt}
     \begin{longtable}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
         \ifempty{#2#3}
-        {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+        {\entrytitlestyle{#1} & \entrydatestyle{#4} \\}
         {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
             \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
        
@@ -760,7 +760,7 @@
     \begin{center}
         \setlength\tabcolsep{0pt}
         \setlength{\extrarowheight}{0pt}
-        \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.25cm} R{1.5cm} @{\hskip 0.1cm} L{\textwidth - 5.6cm} R{2.5cm}}
+        \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.25cm} R{1.75cm} @{\hskip 0.1cm} L{\textwidth - 5.6cm} R{2.5cm}}
             }{%
         \end{tabular*}
     \end{center}
