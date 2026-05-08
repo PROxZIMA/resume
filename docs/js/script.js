@@ -21,6 +21,15 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const RESUME_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Resume.pdf";
 const CV_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20CV.pdf";
 
+// Auto-redirect if accessing /?r.pdf or /?cv.pdf directly
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has('r.pdf')) {
+  window.location.href = RESUME_URL;
+}
+else if (urlParams.has('cv.pdf')) {
+  window.location.href = CV_URL;
+}
+
 document.addEventListener("click", () => { external.classList.remove("focus"); });
 
 resumeBtn.addEventListener("click", async (e) => {
@@ -42,7 +51,6 @@ resumeBtn.addEventListener("click", async (e) => {
 
 let DEFAULT_URL = RESUME_URL;
 
-const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('cv') !== null) {
   DEFAULT_URL = CV_URL;
   // set new title
