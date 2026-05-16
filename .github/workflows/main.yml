@@ -1,0 +1,22 @@
+name: Build LuaLaTeX Document
+on: [push]
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v6
+
+      - name: Compile LuaLaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: src
+          root_file: resume.tex
+          latexmk_use_xelatex: true
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: PDF-Output
+          path: src/resume.pdf
