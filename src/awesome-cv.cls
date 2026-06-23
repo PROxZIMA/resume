@@ -48,6 +48,8 @@
 %-------------------------------------------------------------------------------
 % Needed to make fixed length table
 \RequirePackage{array}
+% Needed to create auto + flexible width tables
+\RequirePackage{tabularx}
 % Needed to handle list environment
 \RequirePackage{enumitem}
 % Needed to handle text alignment
@@ -91,7 +93,7 @@
     pdftitle={},
     pdfauthor={},
     pdfsubject={},
-    pdfkeywords={}
+    pdfkeywords={},
     colorlinks=false,
     allbordercolors={0 0 0},
     urlbordercolor=moderate-blue
@@ -259,7 +261,7 @@
 
 % For elements of skill
 \newcommand*{\skilltypestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\textcolor{text}{#1}}}
 
 % For elements of the cover letter
 \newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
@@ -775,13 +777,13 @@
 \newenvironment{cvskills}{%
     \vspace{\acvSectionContentTopSkip}
     \vspace{-2.0mm}
-    \begin{center}
+    \center
         \setlength\tabcolsep{1ex}
         \setlength{\extrarowheight}{0pt}
-        \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+        \tabularx{\textwidth}{@{}r@{\hspace{\tabcolsep}}>{\raggedright\arraybackslash}X@{}}
             }{%
-        \end{tabular*}
-    \end{center}
+        \endtabularx
+    \endcenter
 }
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
