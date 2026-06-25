@@ -35,6 +35,7 @@
 *.run.xml
 *.snm
 *.synctex.gz
+*.synctex.gz.sum.synctex
 *.tex.backup
 *.tex~
 *.thm
