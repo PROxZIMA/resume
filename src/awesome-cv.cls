@@ -719,10 +719,12 @@
     \setlength{\LTpre}{8pt}
     \setlength{\LTpost}{0pt}
     \begin{longtable}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-        \ifempty{#2#3}
-        {\entrytitlestyle{#1} & \entrydatestyle{#4} \\}
-        {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-            \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+        \ifempty{#2#3}{\entrypositionstyle{#1} & \entrydatestyle{#4} \\
+        }{\ifempty{#1#3}{\entrytitlestyle{#2} & \entrydatestyle{#4} \\
+            }{\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+                \entrypositionstyle{#1} & \entrydatestyle{#4} \\
+            }
+        }
        
         % \ifempty{#2}{\entrypositionstyle{#1}}{\entrytitlestyle{#2} \textnormal{-} \entrypositionstyle{#1}}
         % & \ifempty{#3}{\entrydatestyle{#4}}{\entrydatestyle{#4} \entrylocationstyle{#3}} \\

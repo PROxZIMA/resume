@@ -3,27 +3,27 @@
 
 #### [Résumé](https://proxzima.dev/resume/)
 
-You can see the PDF [here](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Resume.pdf)
+You can see the PDF [here](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/pratik-pingale-resume.pdf)
 
 | Page 1 |
 |:---:|
-|<a href="https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Resume.pdf"><img style="width:50%" src="https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/resume.png"/></a> |
+|<a href="https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/pratik-pingale-resume.pdf"><img style="width:50%" src="https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/resume.png"/></a> |
 
 #### [Curriculum Vitae](https://proxzima.dev/resume/?cv)
 
-You can see the PDF [here](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20CV.pdf)
+You can see the PDF [here](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/pratik-pingale-cv.pdf)
 
 | Page 1 | Page 2 |
 |:---:|:---:|
-| [![Résumé](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/cv-0.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20CV.pdf)  | [![Résumé](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/cv-1.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20CV.pdf) |
+| [![Résumé](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/cv-0.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/pratik-pingale-cv.pdf)  | [![Résumé](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/cv-1.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/pratik-pingale-cv.pdf) |
 
 #### Cover Letter
 
-You can see the PDF [here](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Cover%20Letter.pdf)
+You can see the PDF [here](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/pratik-pingale-cover-letter.pdf)
 
 | Without Sections | With Sections |
 |:---:|:---:|
-| [![Cover Letter(Traditional)](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/coverletter-0.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Cover%20Letter.pdf)  | [![Cover Letter(Awesome)](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/coverletter-1.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Cover%20Letter.pdf) |
+| [![Cover Letter(Traditional)](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/coverletter-0.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/pratik-pingale-cover-letter.pdf)  | [![Cover Letter(Awesome)](https://raw.githubusercontent.com/PROxZIMA/resume/master/docs/assets/coverletter-1.png)](https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/pratik-pingale-cover-letter.pdf) |
 
 ## How to Use
 

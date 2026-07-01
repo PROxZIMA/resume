@@ -18,8 +18,8 @@ const updatePDFScale = () => {
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 
-const RESUME_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20Resume.pdf";
-const CV_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/Pratik%20Pingale's%20CV.pdf";
+const RESUME_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/pratik-pingale-resume.pdf";
+const CV_URL = "https://raw.githubusercontent.com/PROxZIMA/resume/master/extras/pratik-pingale-cv.pdf";
 
 // Auto-redirect if accessing /?r.pdf or /?cv.pdf directly
 const urlParams = new URLSearchParams(window.location.search);
@@ -57,7 +57,7 @@ if (urlParams.get('cv') !== null) {
   document.title = "Curriculum Vitae | Pratik Pingale";
   const mainDoc = document.querySelector('#main .document');
   mainDoc.classList.add('cv');
-  alternateBtn.href = location.origin + location.pathname;
+  alternateBtn.href = location.origin + location.pathname + "?r";
   alternateBtn.innerText = "RÉS";
 }
 resumeBtn.href = DEFAULT_URL;
