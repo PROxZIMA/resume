@@ -710,21 +710,30 @@
         }{%
     \end{center}
 }
+
+\ExplSyntaxOn
+\NewExpandableDocumentCommand{\IfBlankXTF}{mmm}{\tl_if_blank:eTF{\text_expand:n{#1}}{#2}{#3}}
+\ExplSyntaxOff
+
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{%
+    \newif\iftwothree
+    \ifblank{#2}{\IfBlankXTF{#3}{\twothreetrue}{\twothreefalse}}{\twothreefalse}
     \vspace{-2.0mm}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
     \setlength{\LTpre}{8pt}
     \setlength{\LTpost}{0pt}
     \begin{longtable}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-        \ifempty{#2#3}{\entrypositionstyle{#1} & \entrydatestyle{#4} \\
-        }{\ifempty{#1#3}{\entrytitlestyle{#2} & \entrydatestyle{#4} \\
+        \iftwothree
+            \entrypositionstyle{#1} & \entrydatestyle{#4} \\
+        \else
+            \IfBlankXTF{#1#3}{\entrytitlestyle{#2} & \entrydatestyle{#4} \\
             }{\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
                 \entrypositionstyle{#1} & \entrydatestyle{#4} \\
             }
-        }
+        \fi
        
         % \ifempty{#2}{\entrypositionstyle{#1}}{\entrytitlestyle{#2} \textnormal{-} \entrypositionstyle{#1}}
         % & \ifempty{#3}{\entrydatestyle{#4}}{\entrydatestyle{#4} \entrylocationstyle{#3}} \\

@@ -44,6 +44,9 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+% Flag for resume vs CV conditionals
+\newif\ifcv\cvtrue
+
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -98,12 +101,12 @@
 \input{common/summary.tex}
 \input{common/skills.tex}
 \input{common/proexperience.tex}
-\input{cv/orgexperience.tex}
-\input{cv/projects.tex}
-\input{cv/education.tex}
-\input{cv/achievements.tex}
-\input{cv/interests.tex}
-% \input{cv/languages.tex}
+\input{common/orgexperience.tex}
+\input{common/projects.tex}
+\input{common/education.tex}
+\input{common/achievements.tex}
+\input{common/interests.tex}
+% \input{common/languages.tex}
 
 
 %-------------------------------------------------------------------------------
