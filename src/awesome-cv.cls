@@ -104,30 +104,8 @@
 
 \RequirePackage{tikz}
 
-% \faExternalLinkSquare*
-\newcommand{\ExternalLink}{%
-    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
-        \begin{scope}[x=1ex, y=1ex]
-            \clip (-0.1,-0.1)
-            --++ (-0, 1.2)
-            --++ (0.6, 0)
-            --++ (0, -0.6)
-            --++ (0.6, 0)
-            --++ (0, -1);
-            \path[draw,
-                line width = 0.5,
-                rounded corners=0.5]
-            (0,0) rectangle (1,1);
-        \end{scope}
-        \path[draw, line width = 0.5] (0.5, 0.5)
-        -- (1, 1);
-        \path[draw, line width = 0.5] (0.6, 1)
-        -- (1, 1) -- (1, 0.6);
-    }
-}
-
 % Works with LuaLatex
-\newcommand{\exthref}[2]{\href{#1}{#2 \ExternalLink}}
+\newcommand{\exthref}[2]{\href{#1}{#2 \raisebox{0.1em}{\fontsize{\fontcharht\font`X - 2pt}{\fontcharht\font`X - 2pt}\selectfont\faLink}}}
 
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
@@ -234,7 +212,7 @@
 \newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text} #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text} #1\vphantom{gpqy}}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
 
@@ -474,7 +452,7 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{1mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{0mm}
+\newcommand{\acvSectionTopSkip}{-1.5mm}
 \newcommand{\acvSectionContentTopSkip}{2mm}
 
 
@@ -706,6 +684,7 @@
 % Define an environment for cventry
 \newenvironment{cventries}{%
     \vspace{\acvSectionContentTopSkip}
+    \vspace{-1mm}
     \begin{center}
         }{%
     \end{center}
@@ -720,7 +699,7 @@
 \newcommand*{\cventry}[5]{%
     \newif\iftwothree
     \ifblank{#2}{\IfBlankXTF{#3}{\twothreetrue}{\twothreefalse}}{\twothreefalse}
-    \vspace{-2.0mm}
+    \vspace{-3.0mm}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
     \setlength{\LTpre}{8pt}
