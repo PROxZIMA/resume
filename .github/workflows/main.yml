@@ -12,11 +12,24 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: src
-          root_file: resume.tex
-          latexmk_use_xelatex: true
+          root_file: |
+            resume.tex
+            cv.tex
+            coverletter.tex
+          latexmk_use_lualatex: true
+      
+      - name: Create PDF artifacts
+        run: |
+          cp src/resume.pdf src/pratik-pingale-resume.pdf
+          cp src/cv.pdf src/pratik-pingale-cv.pdf
+          cp src/coverletter.pdf src/pratik-pingale-cover-letter.pdf
 
-      - name: Upload PDF artifact
+      - name: Upload PDF artifacts
         uses: actions/upload-artifact@v6
         with:
           name: PDF-Output
-          path: src/resume.pdf
+          path: |
+            src/pratik-pingale-resume.pdf
+            src/pratik-pingale-cv.pdf
+            src/pratik-pingale-cover-letter.pdf
+            

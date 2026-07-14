@@ -77,7 +77,7 @@
 % Needed to use icons from font-awesome
 \RequirePackage{fontawesome5}
 % \RequirePackage{roboto}
-\RequirePackage[default,opentype]{sourcesanspro}
+\RequirePackage[default,opentype]{sourcesans}
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
 % Needed to deal a paragraphs
@@ -196,7 +196,7 @@
 
 \newcommand*{\headerfont}{\basefont}
 \newcommand*{\headerfontlight}{\basefont}
-\newcommand*{\footerfont}{\sourcesanspro}
+\newcommand*{\footerfont}{\sourcesans}
 \newcommand*{\bodyfont}{\basefont}
 \newcommand*{\bodyfontlight}{\basefont}
 
@@ -452,7 +452,7 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{1mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{-1.5mm}
+\newcommand{\acvSectionTopSkip}{-.75mm}
 \newcommand{\acvSectionContentTopSkip}{2mm}
 
 
@@ -666,7 +666,6 @@
 % Usage: \cvsubsection{<subsection-title>}
 \newcommand{\cvsubsection}[1]{%
     \vspace{\acvSectionContentTopSkip}
-    \vspace{-3mm}
     \subsectionstyle{#1}
     \phantomsection
 }
@@ -791,7 +790,6 @@
             }{%
         \end{itemize}
     \end{justify}
-    \vspace{-4.0mm}
 }
 
 
