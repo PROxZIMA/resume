@@ -183,7 +183,8 @@
     Extension = .otf,
     BoldFont = *-bold.otf,
     ItalicFont = *-italic.otf,
-    BoldItalicFont = *-bold-italic.otf
+    BoldItalicFont = *-bold-italic.otf,
+    Ligatures = {NoCommon, NoRequired}
 ]
 
 \newfontfamily{\glyphfont}{segoeui}[
